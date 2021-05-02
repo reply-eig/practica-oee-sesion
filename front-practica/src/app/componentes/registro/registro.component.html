@@ -1,0 +1,41 @@
+
+<div class="user" id="login-module">
+  <form class="form" method="post">
+    <h1>Registro Usuario</h1>
+    <div>
+      <input class="form__input" type="text"
+             [(ngModel)]="nombre"
+             name="nombre"
+             placeholder="Nomobre"
+             required="required" />
+    </div>
+    <div>
+      <input class="form__input" type="email"
+             [(ngModel)]="email"
+             name="email"
+             placeholder="Email"
+             required="required" />
+    </div>
+    <div>
+      <input class="form__input" type="number"
+             [(ngModel)]="age"
+             name="age"
+             placeholder="Edad"
+             required="required" />
+    </div>
+    <div>
+      <input class="form__input" type="password"
+             [(ngModel)]="passwd"
+             name="passwd"
+             placeholder="Password"
+             required="required" />
+    </div>
+
+    <button class="btn" type="submit" (click)="registrar()">REGISTRAR</button>
+    <br />
+    <br />
+    <hr />
+    <p>¿Ya estás registrado?</p>
+    <a routerLink="/login" routerLinkActive="active">Iniciar Sesion</a>
+  </form>
+</div>

@@ -1,0 +1,38 @@
+<div class="user" id="login-module">
+  <h1 class="user__title">Login</h1>
+  <br />
+  <div>
+    <div id="container-mensaje" *ngIf="verify;then thenBlock; else elseBlock"> </div>
+    <ng-template #thenBlock> </ng-template>
+    <ng-template #elseBlock color="red">Usuario y/o contraseña incorrectos</ng-template>
+  </div>
+  <form class="form" method="post">
+
+    <div class="form__group">
+      <!--<label>
+        Usuario:
+      </label>-->
+      <input class="form__input" type="email"
+             [(ngModel)]="email"
+             name="email"
+             placeholder="Email"
+             required="required" />
+    </div>
+    <div class="form__group">
+      <!--<label>
+        Contraseña:
+      </label>-->
+      <input class="form__input" type="password"
+             [(ngModel)]="passwd"
+             name="passwd"
+             placeholder="Password"
+             required="required" />
+    </div>
+
+    <button class="btn" type="submit" (click)="login()">Iniciar Sesion</button>
+    <hr />
+    <hr />
+    <p>¿No estás registrado?</p>
+    <a routerLink="/register" routerLinkActive="active">Registrar ahora</a>
+  </form>
+</div>
