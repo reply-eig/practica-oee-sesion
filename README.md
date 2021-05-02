@@ -17,6 +17,13 @@ Desde el directorio ejecutamos los siguientes comandos:
 
 ##FUNCIONAMIENTO DE LA APLICACION
 
-Una vez arrancada la aplicación nos llevará a una pantalla de registro para que podamos crear un nuevo usuario. TRas ello, iniciaremos sesión con el usuario que acabamos de crear. Con esta autenticación se nos mostrará un listado de usuarios dados de alta en sistema.
+Una vez arrancada la aplicación nos llevará a una pantalla de home sin que nos cargue el listado. Le damos a registro para que podamos crear un nuevo usuario. Tras ello, iniciaremos sesión con el usuario que acabamos de crear. Con esta autenticación se nos mostrará un listado de usuarios dados de alta en sistema.
 
 En el menú tendremos la posibilidad de dar de alta a nuevos usuarios, por lo que se nos mostrará una ventana de registro para poder darlo de alta. Esto refrescará el listado de usuarios que muestra añadiendo el nuevo que se acaba de dar de alta.
+
+
+##
+
+Deseado:
+
+Por falta de tiempo, he tenido que hacer la aplicación lo más sencillo y funcional posible como se solicitaba. Se podría mejorar de mil maneras diferentes pero no ha sido posible profundizar más en ello.
